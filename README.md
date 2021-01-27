@@ -16,9 +16,9 @@ cd docker-monerod
 # Build image:
 make build
 # Create blockchain volume and copy configuration:
-mkdir /share/bitmonero && cp bitmonero.conf /share/bitmonero
+mkdir /opt/bitmonero && cp bitmonero.conf /opt/bitmonero
 # Run container
-docker run -p 18080:18080 -p 18081:18081 --restart=always -v /share/bitmonero:/bitmonero --name=monerod -td sstassin/monerod
+docker run -p 18080:18080 -p 18081:18081 --restart=always -v bitmonero:/bitmonero --name=monerod -td sstassin/monerod
 # View logs
 docker logs -f monerod
 ```
