@@ -1,6 +1,6 @@
 SOURCE=.
-IMAGENAME=m3h7/monerod
-MONERO_RELEASE=v0.13.0.2
+IMAGENAME=sstassin/docker-monerod
+MONERO_RELEASE=v0.17.1.9
 
 .PHONY: all
 all: usage
